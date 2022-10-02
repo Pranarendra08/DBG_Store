@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DBGStore">
         <activity
+            android:name=".onboarding.OnBoardingActivity"
+            android:exported="false" />
+        <activity
             android:name=".signin.SignInActivity"
             android:exported="true">
             <intent-filter>
@@ -20,10 +23,10 @@
         </activity>
         <activity
             android:name=".signup.SignUpActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
