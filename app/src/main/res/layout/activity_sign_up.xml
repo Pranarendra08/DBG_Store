@@ -60,7 +60,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <EditText
-            android:id="@+id/edt_email3"
+            android:id="@+id/edt_fullname"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
@@ -84,7 +84,7 @@
             android:textColor="@color/primary_color"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_email3" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_fullname" />
 
         <EditText
             android:id="@+id/edt_email"
