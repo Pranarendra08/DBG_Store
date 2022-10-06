@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/iv_photo_topup"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginTop="24dp"
@@ -32,7 +32,7 @@
             android:textColor="@color/primary_color"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_photo_topup" />
 
         <TextView
             android:id="@+id/textView8"
@@ -42,7 +42,7 @@
             android:layout_marginTop="5dp"
             android:fontFamily="@font/poppins"
             android:text="Perkuat akun dan jadilah pemenang"
-            android:textColor="@color/primary_color"
+            android:textColor="@color/secondary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -99,19 +99,19 @@
             android:layout_marginTop="24dp"
             android:fontFamily="@font/poppins"
             android:text="Verify ID"
-            android:textColor="@color/primary_color"
+            android:textColor="@color/secondary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
         <EditText
-            android:id="@+id/edt_fullname2"
+            android:id="@+id/edt_verify_id"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/shape_line_2"
+            android:background="@drawable/shape_line_game_list"
             android:ems="10"
             android:hint="\tEnter your ID"
             android:inputType="textPersonName|text"
@@ -127,12 +127,93 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins"
             android:text="Nominal Top Up"
-            android:textColor="@color/primary_color"
+            android:textColor="@color/secondary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_fullname2" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_verify_id" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_rectangle_3"
+            app:cardBackgroundColor="#F9FAFF"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+            <TextView
+                android:id="@+id/tv_gold1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins"
+                android:text="125 Gold"
+                android:textColor="@color/secondary_color"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/poppins"
+                android:text="Rp 350.000"
+                android:textColor="@color/secondary_color"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_gold1" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_rectangle_4"
+            app:cardBackgroundColor="#F9FAFF"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card1">
+
+            <TextView
+                android:id="@+id/tv_gold2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins"
+                android:text="225 Gold"
+                android:textColor="@color/secondary_color"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/poppins"
+                android:text="Rp 450.000"
+                android:textColor="@color/secondary_color"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_gold2" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_marginStart="16dp"
@@ -142,21 +223,21 @@
             android:backgroundTint="#F9FAFF"
             app:cardCornerRadius="15dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/card2"
             app:layout_constraintEnd_toEndOf="parent">
 
             <TextView
-                android:id="@+id/tv_gold1"
+                android:id="@+id/tv_gold3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/poppins"
+                android:text="325 Gold"
                 android:textColor="@color/secondary_color"
-                android:textSize="28dp"
-                android:text="125 Gold"
+                android:textSize="28sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="parent"/>
+                app:layout_constraintTop_toBottomOf="parent" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -165,15 +246,153 @@
                 android:layout_marginTop="70dp"
                 android:fontFamily="@font/poppins"
                 android:textColor="@color/secondary_color"
-                android:textSize="18dp"
-                android:text="Rp 350.000"
+                android:textSize="18sp"
+                android:text="Rp 450.000"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_gold1"/>
+                app:layout_constraintTop_toBottomOf="@id/tv_gold3"/>
         </androidx.cardview.widget.CardView>
 
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins"
+            android:text="Verify ID"
+            android:textColor="@color/secondary_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card3" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_rectangle_3"
+            android:backgroundTint="#F9FAFF"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tv_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins"
+                android:text="Transfer"
+                android:textColor="@color/secondary_color"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/secondary_color"
+                android:textSize="18sp"
+                android:text="Worldwide Available"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_transfer"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_visa"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_rectangle_3"
+            android:backgroundTint="#F9FAFF"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_transfer"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tv_visa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins"
+                android:text="VISA"
+                android:textColor="@color/secondary_color"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/secondary_color"
+                android:textSize="18sp"
+                android:text="Credit card"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_transfer"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins"
+            android:text="Bank Account Name"
+            android:textColor="@color/secondary_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_visa" />
+
+        <EditText
+            android:id="@+id/edt_bank_account"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_line_game_list"
+            android:ems="10"
+            android:hint="\tEnter your bank account name"
+            android:inputType="textPersonName|text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue_top_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/shape_rectangle_2"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@color/color3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_bank_account" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
 </ScrollView>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DBGStore">
         <activity
+            android:name=".checkout.CheckoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".topup.TopUpActivity"
             android:exported="false" />
         <activity
