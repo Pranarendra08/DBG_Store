@@ -37,7 +37,6 @@ class HomeFragment : Fragment() {
             with(binding) {
                 rvListGame.setHasFixedSize(true)
                 list.addAll(GameData.listData)
-                showGrid()
 
                 rvListGame.layoutManager = GridLayoutManager(requireActivity(), 2)
                 val gridGameAdapter = GridGameAdapter(list)
@@ -52,9 +51,5 @@ class HomeFragment : Fragment() {
                 })
             }
         }
-    }
-
-    private fun showGrid() {
-
     }
 }

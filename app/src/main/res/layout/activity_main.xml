@@ -10,6 +10,7 @@
         android:id="@+id/layout_home"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:elevation="25dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,12 +20,13 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:elevation="25dp"
+        android:elevation="250dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
+
 
         <ImageView
             android:id="@+id/iv_home"
@@ -43,6 +45,8 @@
             android:paddingTop="14dp"
             android:paddingBottom="14dp"
             app:srcCompat="@drawable/ic_profile"/>
+
+
 
     </LinearLayout>
 
