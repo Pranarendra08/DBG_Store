@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DBGStore">
         <activity
+            android:name=".signup.SignUpSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signup.SignUpPhotoActivity"
+            android:exported="false" />
+        <activity
             android:name=".checkout.CheckoutCompleteActivity"
             android:exported="false" />
         <activity

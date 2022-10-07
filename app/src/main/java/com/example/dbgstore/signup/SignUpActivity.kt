@@ -25,7 +25,7 @@ class SignUpActivity : AppCompatActivity() {
     private fun initViews() {
         with(binding) {
             btnContinue.setOnClickListener {
-                startActivity(Intent(this@SignUpActivity, OnBoardingActivity::class.java))
+                startActivity(Intent(this@SignUpActivity, SignUpPhotoActivity::class.java))
             }
             btnSignIn.setOnClickListener {
                 startActivity(Intent(this@SignUpActivity, SignInActivity::class.java))
