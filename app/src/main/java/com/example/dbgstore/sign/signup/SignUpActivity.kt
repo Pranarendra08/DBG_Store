@@ -1,12 +1,10 @@
-package com.example.dbgstore.signup
+package com.example.dbgstore.sign.signup
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.dbgstore.R
 import com.example.dbgstore.databinding.ActivitySignUpBinding
-import com.example.dbgstore.onboarding.OnBoardingActivity
-import com.example.dbgstore.signin.SignInActivity
+import com.example.dbgstore.sign.signin.SignInActivity
 
 class SignUpActivity : AppCompatActivity() {
 

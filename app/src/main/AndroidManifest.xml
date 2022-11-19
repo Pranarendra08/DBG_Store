@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DBGStore">
         <activity
-            android:name=".signup.SignUpSuccessActivity"
+            android:name=".sign.signup.SignUpSuccessActivity"
             android:exported="false" />
         <activity
-            android:name=".signup.SignUpPhotoActivity"
+            android:name=".sign.signup.SignUpPhotoActivity"
             android:exported="false" />
         <activity
             android:name=".checkout.CheckoutCompleteActivity"
@@ -28,7 +28,7 @@
             android:name=".onboarding.OnBoardingActivity"
             android:exported="false" />
         <activity
-            android:name=".signin.SignInActivity"
+            android:name=".sign.signin.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".signup.SignUpActivity"
+            android:name=".sign.signup.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

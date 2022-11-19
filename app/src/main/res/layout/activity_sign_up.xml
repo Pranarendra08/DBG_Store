@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".signup.SignUpActivity">
+        tools:context=".sign.signup.SignUpActivity">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -87,7 +87,7 @@
             app:layout_constraintTop_toBottomOf="@+id/edt_fullname" />
 
         <EditText
-            android:id="@+id/edt_email"
+            android:id="@+id/edt_username"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
@@ -111,10 +111,10 @@
             android:textColor="@color/primary_color"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_username" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/edt_password"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
@@ -163,7 +163,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_password" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
