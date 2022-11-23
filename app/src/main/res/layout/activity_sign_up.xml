@@ -69,6 +69,7 @@
             android:background="@drawable/shape_line_2"
             android:ems="10"
             android:inputType="textPersonName|text"
+            android:paddingStart="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -87,7 +88,7 @@
             app:layout_constraintTop_toBottomOf="@+id/edt_fullname" />
 
         <EditText
-            android:id="@+id/edt_username"
+            android:id="@+id/edt_email"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
@@ -96,6 +97,7 @@
             android:background="@drawable/shape_line_2"
             android:ems="10"
             android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -111,7 +113,7 @@
             android:textColor="@color/primary_color"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_username" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_email" />
 
         <EditText
             android:id="@+id/edt_password"
@@ -123,6 +125,7 @@
             android:background="@drawable/shape_line_2"
             android:ems="10"
             android:inputType="textPassword"
+            android:paddingStart="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />

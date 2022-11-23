@@ -76,7 +76,6 @@ class SignInActivity : AppCompatActivity() {
                     if (user.password.equals(iPassword)) {
                         val preference = preferences
                         preference.setValue("nama", user.nama.toString())
-                        preference.setValue("username", user.username.toString())
                         preference.setValue("url", user.url.toString())
                         preference.setValue("email", user.email.toString())
                         preference.setValue("status", "1")
