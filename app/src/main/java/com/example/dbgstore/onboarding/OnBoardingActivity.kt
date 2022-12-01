@@ -24,10 +24,9 @@ class OnBoardingActivity : AppCompatActivity() {
     private fun initViews() {
         with(binding) {
             btnGetStarted.setOnClickListener {
+                finishAffinity()
                 startActivity(Intent(this@OnBoardingActivity, MainActivity::class.java))
             }
-
-
         }
     }
 }

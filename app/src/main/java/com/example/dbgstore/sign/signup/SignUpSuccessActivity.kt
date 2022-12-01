@@ -23,6 +23,7 @@ class SignUpSuccessActivity : AppCompatActivity() {
     private fun initViews() {
         with(binding) {
             btnTopUp.setOnClickListener {
+                finishAffinity()
                 startActivity(Intent(this@SignUpSuccessActivity, OnBoardingActivity::class.java))
             }
         }
