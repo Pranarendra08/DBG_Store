@@ -7,13 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.dbgstore.R
 import com.example.dbgstore.databinding.FragmentProfileBinding
+import com.example.dbgstore.utils.Preferences
 
 class ProfileFragment : Fragment() {
 
     private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
+
+    lateinit var preferences: Preferences
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,8 +34,13 @@ class ProfileFragment : Fragment() {
     private fun initViews() {
         if (activity != null && context != null) {
             with(binding) {
+                preferences = Preferences(requireContext())
+
+                tvNamaProfile.text = preferences.getValue("nama")
+                tvEmailProfile.text = preferences.getValue("email")
+
                 Glide.with(this@ProfileFragment)
-                    .load(R.drawable.photo_profile)
+                    .load(preferences.getValue("url"))
                     .apply(RequestOptions.circleCropTransform())
                     .into(ivPhotoProfile)
             }

@@ -3,7 +3,6 @@ package com.example.dbgstore.sign.signup
 import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Intent
-import android.graphics.Bitmap
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -20,7 +19,6 @@ import com.github.dhaval2404.imagepicker.ImagePicker
 import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.karumi.dexter.Dexter
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionDeniedResponse
 import com.karumi.dexter.listener.PermissionGrantedResponse
@@ -126,7 +124,7 @@ class SignUpPhotoActivity : AppCompatActivity(), PermissionListener {
 
                 preferences.setValue("nama", user.nama.toString())
                 preferences.setValue("email", user.email.toString())
-                preferences.setValue("url", "")
+                preferences.setValue("url", user.url.toString())
                 preferences.setValue("status", "1")
 
                 finishAffinity()

@@ -31,7 +31,7 @@ class SignInActivity : AppCompatActivity() {
     private fun initViews() {
         with(binding) {
             mDatabase = FirebaseDatabase.getInstance("https://dbg-store-default-rtdb.asia-southeast1.firebasedatabase.app/")
-                .getReference("user")
+                .getReference("User")
             preferences = Preferences(this@SignInActivity)
 
             preferences.setValue("onboarding", "1")
