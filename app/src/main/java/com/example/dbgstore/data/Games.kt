@@ -1,6 +1,11 @@
 package com.example.dbgstore.data
 
-data class Games(
-    var name: String = "",
-    var photo: Int = 0
-)
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+class Games(
+    var nama: String = "",
+    var tipe: String = "",
+    var url: String = ""
+) : Parcelable
