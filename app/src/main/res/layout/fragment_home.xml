@@ -47,6 +47,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_logobdgstore" />
 
+        <ImageView
+            android:id="@+id/iv_photo_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_list_game"
             android:layout_width="0dp"

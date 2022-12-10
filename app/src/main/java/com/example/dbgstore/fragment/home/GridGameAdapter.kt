@@ -45,9 +45,7 @@ class GridGameAdapter (private val listGame: ArrayList<Games>,
         holder.bindItem(listGame[position], listener, contextAdapter)
     }
 
-    override fun getItemCount(): Int {
-        return listGame.size
-    }
+    override fun getItemCount(): Int = listGame.size
 
     class GridViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.iv_item_grid_game)
@@ -66,7 +64,7 @@ class GridGameAdapter (private val listGame: ArrayList<Games>,
         }
     }
 
-    interface OnItemClickCallback {
-        fun onItemClicked(data: Games)
-    }
+//    interface OnItemClickCallback {
+//        fun onItemClicked(data: Games)
+//    }
 }

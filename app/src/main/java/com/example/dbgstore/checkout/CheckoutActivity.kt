@@ -11,6 +11,10 @@ class CheckoutActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCheckoutBinding
 
+    companion object {
+        const val EXTRA_ID = "extra_id"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCheckoutBinding.inflate(layoutInflater)
@@ -22,6 +26,10 @@ class CheckoutActivity : AppCompatActivity() {
 
     private fun initViews() {
         with(binding) {
+
+
+
+
             btnConfirmPayment.setOnClickListener {
                 startActivity(Intent(this@CheckoutActivity, CheckoutCompleteActivity::class.java))
             }

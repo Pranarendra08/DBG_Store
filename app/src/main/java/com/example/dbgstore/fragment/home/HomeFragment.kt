@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.dbgstore.data.GameData
 import com.example.dbgstore.data.Games
 import com.example.dbgstore.databinding.FragmentHomeBinding
 import com.example.dbgstore.topup.TopUpActivity
@@ -70,7 +69,7 @@ class HomeFragment : Fragment() {
         with(binding) {
             mDatabase.addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
-                    dataList.clear()
+                    //dataList.clear()
                     for (getsnapshot in snapshot.children) {
                         var game = getsnapshot.getValue(Games::class.java)
                         dataList.add(game!!)

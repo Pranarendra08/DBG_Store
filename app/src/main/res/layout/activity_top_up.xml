@@ -11,6 +11,16 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_logobdgstore" />
+
+        <ImageView
             android:id="@+id/iv_photo_topup"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -48,7 +58,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+            android:id="@+id/iv_photo_game_detail"
             android:layout_width="130dp"
             android:layout_height="140dp"
             android:layout_marginStart="16dp"
@@ -58,51 +68,61 @@
             app:layout_constraintTop_toBottomOf="@+id/textView8">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/iv_photo_game_details"
                 android:layout_width="130dp"
                 android:layout_height="140dp"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/free_fire" />
         </androidx.cardview.widget.CardView>
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_photo_game_detail"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="140dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView8"-->
+<!--            tools:srcCompat="@tools:sample/avatars" />-->
 
         <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_nama_game_detail"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Free Fire"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintStart_toEndOf="@+id/cardView"
-            app:layout_constraintTop_toTopOf="@+id/cardView" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_photo_game_detail"
+            app:layout_constraintTop_toTopOf="@+id/iv_photo_game_detail" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/tv_tipe_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="52dp"
             android:text="BattleGrounds 2022"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/cardView"
-            app:layout_constraintStart_toEndOf="@+id/cardView"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintStart_toEndOf="@+id/iv_photo_game_detail"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_game_detail" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins"
             android:text="Verify ID"
             android:textColor="@color/secondary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_photo_game_detail" />
 
         <EditText
             android:id="@+id/edt_verify_id"
@@ -113,6 +133,7 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/shape_line_game_list"
             android:ems="10"
+            android:paddingStart="8dp"
             android:hint="\tEnter your ID"
             android:inputType="textPersonName|text"
             app:layout_constraintEnd_toEndOf="parent"
@@ -132,6 +153,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_verify_id" />
 
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_nominal_topup"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="250dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView12"-->
+<!--            tools:listitem="@layout/item_topup_nominal" />-->
         <androidx.cardview.widget.CardView
             android:id="@+id/card1"
             android:layout_width="match_parent"
@@ -139,15 +168,21 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/shape_rectangle_3"
+            android:background="@drawable/shape_rectangle_4"
             app:cardBackgroundColor="#F9FAFF"
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12">
 
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_card1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/shape_rectangle_3"/>-->
+
             <TextView
-                android:id="@+id/tv_gold1"
+                android:id="@+id/tv_jumlah1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -160,6 +195,7 @@
                 app:layout_constraintTop_toBottomOf="parent" />
 
             <TextView
+                android:id="@+id/tv_harga1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -169,7 +205,7 @@
                 android:textColor="@color/secondary_color"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_gold1" />
+                app:layout_constraintTop_toBottomOf="@id/tv_jumlah1" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -187,7 +223,7 @@
             app:layout_constraintTop_toBottomOf="@+id/card1">
 
             <TextView
-                android:id="@+id/tv_gold2"
+                android:id="@+id/tv_jumlah2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -200,6 +236,7 @@
                 app:layout_constraintTop_toBottomOf="parent" />
 
             <TextView
+                android:id="@+id/tv_harga2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -209,7 +246,7 @@
                 android:textColor="@color/secondary_color"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_gold2" />
+                app:layout_constraintTop_toBottomOf="@id/tv_jumlah2" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -227,7 +264,7 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <TextView
-                android:id="@+id/tv_gold3"
+                android:id="@+id/tv_jumlah3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -240,6 +277,7 @@
                 app:layout_constraintTop_toBottomOf="parent" />
 
             <TextView
+                android:id="@+id/tv_harga3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -249,129 +287,8 @@
                 android:textSize="18sp"
                 android:text="Rp 450.000"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_gold3"/>
+                app:layout_constraintTop_toBottomOf="@id/tv_jumlah3"/>
         </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:fontFamily="@font/poppins"
-            android:text="Verify ID"
-            android:textColor="@color/secondary_color"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card3" />
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_transfer"
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/shape_rectangle_3"
-            android:backgroundTint="#F9FAFF"
-            app:cardCornerRadius="15dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:layout_constraintEnd_toEndOf="parent">
-
-            <TextView
-                android:id="@+id/tv_transfer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:fontFamily="@font/poppins"
-                android:text="Transfer"
-                android:textColor="@color/secondary_color"
-                android:textSize="28sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="70dp"
-                android:fontFamily="@font/poppins"
-                android:textColor="@color/secondary_color"
-                android:textSize="18sp"
-                android:text="Worldwide Available"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_transfer"/>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_visa"
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/shape_rectangle_3"
-            android:backgroundTint="#F9FAFF"
-            app:cardCornerRadius="15dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card_transfer"
-            app:layout_constraintEnd_toEndOf="parent">
-
-            <TextView
-                android:id="@+id/tv_visa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:fontFamily="@font/poppins"
-                android:text="VISA"
-                android:textColor="@color/secondary_color"
-                android:textSize="28sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="70dp"
-                android:fontFamily="@font/poppins"
-                android:textColor="@color/secondary_color"
-                android:textSize="18sp"
-                android:text="Credit card"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_transfer"/>
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:fontFamily="@font/poppins"
-            android:text="Bank Account Name"
-            android:textColor="@color/secondary_color"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card_visa" />
-
-        <EditText
-            android:id="@+id/edt_bank_account"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/shape_line_game_list"
-            android:ems="10"
-            android:hint="\tEnter your bank account name"
-            android:inputType="textPersonName|text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_continue_top_up"
@@ -391,7 +308,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_bank_account" />
+            app:layout_constraintTop_toBottomOf="@+id/card3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
