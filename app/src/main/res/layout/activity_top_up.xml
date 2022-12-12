@@ -72,7 +72,7 @@
                 android:layout_width="130dp"
                 android:layout_height="140dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/free_fire" />
+                tools:srcCompat="@tools:sample/avatars" />
         </androidx.cardview.widget.CardView>
 <!--        <ImageView-->
 <!--            android:id="@+id/iv_photo_game_detail"-->
@@ -153,14 +153,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_verify_id" />
 
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/rv_nominal_topup"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="250dp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/textView12"-->
-<!--            tools:listitem="@layout/item_topup_nominal" />-->
         <androidx.cardview.widget.CardView
             android:id="@+id/card1"
             android:layout_width="match_parent"
@@ -168,18 +160,12 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/shape_rectangle_4"
+            android:background="@drawable/shape_rectangle_3"
             app:cardBackgroundColor="#F9FAFF"
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12">
-
-<!--            <ImageView-->
-<!--                android:id="@+id/iv_card1"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:src="@drawable/shape_rectangle_3"/>-->
 
             <TextView
                 android:id="@+id/tv_jumlah1"
@@ -215,7 +201,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/shape_rectangle_4"
+            android:background="@drawable/shape_rectangle_3"
             app:cardBackgroundColor="#F9FAFF"
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -257,7 +243,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/shape_rectangle_3"
-            android:backgroundTint="#F9FAFF"
+            app:cardBackgroundColor="#F9FAFF"
             app:cardCornerRadius="15dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/card2"

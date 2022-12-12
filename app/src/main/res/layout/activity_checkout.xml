@@ -63,7 +63,7 @@
                 android:layout_width="130dp"
                 android:layout_height="140dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/free_fire" />
+                tools:srcCompat="@tools:sample/avatars" />
         </androidx.cardview.widget.CardView>
 
         <TextView
@@ -130,7 +130,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/tv_id_player"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -154,7 +154,7 @@
             android:textColor="@color/secondary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_id_player" />
 
         <TextView
             android:id="@+id/textView19"
@@ -184,7 +184,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/tv_jumlah_checkout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -208,10 +208,10 @@
             android:textColor="@color/secondary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_jumlah_checkout" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/tv_harga_checkout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -235,10 +235,10 @@
             android:textColor="@color/secondary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_harga_checkout" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/tv_total_harga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -268,7 +268,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total_harga"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
