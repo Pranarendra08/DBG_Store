@@ -74,10 +74,6 @@ class SignUpPhotoActivity : AppCompatActivity(), PermissionListener {
                     ivUpload.setImageResource(R.drawable.ic_upload)
                     ivProfilePhoto.setImageResource(R.drawable.shape_circle)
                 } else {
-//                    Dexter.withActivity(this@SignUpPhotoActivity)
-//                        .withPermission(android.Manifest.permission.CAMERA)
-//                        .withListener(this@SignUpPhotoActivity)
-//                        .check()
                     ImagePicker.with(this@SignUpPhotoActivity)
                         .cameraOnly()
                         .start()

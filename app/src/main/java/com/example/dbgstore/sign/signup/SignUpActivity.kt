@@ -24,7 +24,6 @@ class SignUpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_sign_up)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
@@ -76,9 +75,6 @@ class SignUpActivity : AppCompatActivity() {
         user.email = sEmail
         user.password = sPassword
         checkUser(sNama, user)
-//        if (sNama != null) {
-//
-//        }
     }
 
     private fun checkUser(sNama: String, data: User) {

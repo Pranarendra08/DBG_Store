@@ -55,7 +55,6 @@ class SignInActivity : AppCompatActivity() {
                 } else {
                     pushLogin(iUsername, iPassword)
                 }
-                //startActivity(Intent(this@SignInActivity, MainActivity::class.java))
             }
 
             btnSignUp.setOnClickListener {
